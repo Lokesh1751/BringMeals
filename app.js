@@ -6,7 +6,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.get("/", cors(), (req, res) => {});
+app.get("/", (req, res) => {
+  res.send("Server Running");
+});
 
 app.post("/", async (req, res) => {
   const { email, password } = req.body;
@@ -42,15 +44,13 @@ app.post("/signup", async (req, res) => {
       res.json("exist");
     } else {
       res.json("notexist");
-      await collection.insertMany([data]);
+      await collection.insertOne(data);
     }
   } catch (e) {
     res.json("fail");
   }
 });
-app.get("/",(req,res)=>{
-  res.send("Server Running");
-})
+
 app.listen(8000, () => {
   console.log("port connected");
 });
