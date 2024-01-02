@@ -48,7 +48,9 @@ app.post("/signup", async (req, res) => {
     res.json("fail");
   }
 });
-
+app.get("/",(req,res)=>{
+  res.send("Server Running");
+})
 app.listen(8000, () => {
   console.log("port connected");
 });
