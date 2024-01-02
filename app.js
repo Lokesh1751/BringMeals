@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
   res.send("Server Running");
 });
 
-app.post("/", async (req, res) => {
+app.post("/login", async (req, res) => {
   const { email, password } = req.body;
 
   try {

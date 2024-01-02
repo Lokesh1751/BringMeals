@@ -85,7 +85,7 @@ function MyAccount() {
 
     try {
       await axios
-        .post("https://bring-meals.onrender.com/", {
+        .post("https://bring-meals.onrender.com/login", {
           email,
           password,
         })
