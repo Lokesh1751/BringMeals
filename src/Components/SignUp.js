@@ -89,7 +89,7 @@ function SignUp() {
     e.preventDefault();
     try {
       await axios
-        .post("http://localhost:8000/signup", {
+        .post("https://bringmeals.onrender.com/signup", {
           email,
           password,
         })
