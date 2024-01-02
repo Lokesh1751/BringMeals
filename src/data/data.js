@@ -77,8 +77,7 @@ export const mealData = [
     recipe:
       "Here is the recipe for Cheeseless Pizza: Prepare your pizza dough and spread tomato sauce over it. Top with your favorite veggies and seasonings. Bake in a preheated oven until the crust is golden brown. Enjoy your cheeseless pizza!",
     ingredients:
-      "Pizza dough \
-     tomato sauce  assorted  veggies  seasonings",
+      "Pizza dough tomato sauce  assorted  veggies  seasonings",
   },
   {
     id: 6,

@@ -6,7 +6,6 @@ import { chicken } from "../data/data";
 import { Link } from "react-router-dom";
 const Meal = () => {
   const [food, setfood] = useState(mealData);
-  const [rec, setrec] = useState(" ");
 
   return (
     <>

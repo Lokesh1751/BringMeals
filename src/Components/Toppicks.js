@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { topPicks } from "../data/data";
 import "@splidejs/react-splide/css";
 
 const Toppicks = () => {
-  const [ini, setit] = useState(0);
-  const [item, setitem] = useState("");
 
   return (
     <>

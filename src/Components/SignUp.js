@@ -75,7 +75,7 @@
 
 // export default MyAccount;
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 
@@ -94,9 +94,9 @@ function SignUp() {
           password,
         })
         .then((res) => {
-          if (res.data == "exist") {
+          if (res.data === "exist") {
             alert("User already exists");
-          } else if (res.data == "notexist") {
+          } else if (res.data === "notexist") {
             history("/", { state: { id: email } });
           }
         })

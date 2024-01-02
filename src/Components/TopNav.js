@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
-import { BsFillCartFill, BsPerson } from "react-icons/bs";
+import { BsFillCartFill } from "react-icons/bs";
 import { MdMenu } from "react-icons/md";
 import { FaGoogleWallet } from "react-icons/fa";
 import { MdOutlineFavorite, MdHelp } from "react-icons/md";
