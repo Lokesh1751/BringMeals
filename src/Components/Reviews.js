@@ -11,7 +11,7 @@ const Reviews = () => {
         backgroundSize: "Cover",
       }}
     >
-      <Link to="/">
+      <Link to="/home">
         <FaArrowLeft size={25} className="text-white relative left-3 top-3" />
       </Link>
       <h2 className="text-4xl py-10 text-center text-white">

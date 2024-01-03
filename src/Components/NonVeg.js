@@ -12,7 +12,7 @@ const Menu = () => {
         backgroundSize: "Cover",
       }}
     >
-      <Link to="/">
+      <Link to="/home">
         <FaArrowLeft size={25} className="text-white absolute left-3 top-3" />
       </Link>
       <h3 className="text-orange-700 font-bold text-3xl py-5 text-center py-12 xl:text-orange-700 font-bold xl:text-4xl py-5 text-center py-12">

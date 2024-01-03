@@ -11,7 +11,7 @@ const Category = () => {
         backgroundSize: "Cover",
       }}
     >
-      <Link to="/">
+      <Link to="/home">
         <FaArrowLeft size={25} className="text-white absolute left-3 top-3" />
       </Link>
       <h3 className="text-orange-700 font-bold text-3xl  text-center py-5 xl:text-orange-700  xl:text-4xl ">
