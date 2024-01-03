@@ -6,11 +6,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.send("Server Running");
+app.get("/", cors(), (req, res) => {
+  res.send("server running");
 });
 
-app.post("/login", async (req, res) => {
+app.post("/v1/", async (req, res) => {
   const { email, password } = req.body;
 
   try {
@@ -29,7 +29,7 @@ app.post("/login", async (req, res) => {
   }
 });
 
-app.post("/signup", async (req, res) => {
+app.post("/v1/signup", async (req, res) => {
   const { email, password } = req.body;
 
   const data = {
@@ -44,7 +44,7 @@ app.post("/signup", async (req, res) => {
       res.json("exist");
     } else {
       res.json("notexist");
-      await collection.insertOne(data);
+      await collection.insertMany([data]);
     }
   } catch (e) {
     res.json("fail");
